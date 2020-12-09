@@ -1,5 +1,6 @@
 package com.clearminds.lco.bdd;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -14,6 +15,8 @@ public class ConexionBDD {
 
 	public static String leerPropiedad(String propiedad) {
 		Properties p = new Properties();
+		File f = new File("conexion.properties");
+		System.out.println("ruta: "+f.getAbsoluteFile());
 		try {
 			p.load(new FileReader("conexion.properties"));
 		} catch (FileNotFoundException e) {
