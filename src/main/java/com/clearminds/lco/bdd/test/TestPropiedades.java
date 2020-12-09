@@ -1,5 +1,7 @@
 package com.clearminds.lco.bdd.test;
 
+import java.sql.Connection;
+
 import com.clearminds.lco.bdd.ConexionBDD;
 
 public class TestPropiedades {
@@ -12,5 +14,7 @@ public class TestPropiedades {
 		System.out.println(valor);
 
 	}
+	
+	
 
 }
